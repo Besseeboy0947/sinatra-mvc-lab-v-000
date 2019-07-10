@@ -10,13 +10,14 @@ class PigLatinizer
     end
     latinized_word
   end
+  letters.join
+  end
 
-  def to_pig_latin(sentence)
-    words_in_sentence = sentence.split(" ")
-    
-    pig_latinized_words = words_in_sentence.collect do |word|
-      self.piglatinize(word)
-    end
+  def to_pig_latin(text)
+    words = text.split(" ")
+    words.map! {|word| piglatinize(word)}
+    words.join(" ")
+
 
     new_sentence = pig_latinized_words.join(" ")
   end

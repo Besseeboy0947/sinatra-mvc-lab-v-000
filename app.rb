@@ -12,5 +12,9 @@ class App < Sinatra::Base
     @pig_latinized_word = word.to_pig_latin(user_word)
 
     erb :pit_latin
+    
+    iwayovelay ogrammingpray
+         
+         
   end
 end

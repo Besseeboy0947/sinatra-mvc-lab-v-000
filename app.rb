@@ -13,7 +13,6 @@ class App < Sinatra::Base
 
     erb :pit_latin
     
-    iwayovelay ogrammingpray
          
          
   end
